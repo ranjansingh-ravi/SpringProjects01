@@ -1,6 +1,6 @@
 package com.ravie.learnspringframework.game;
 
-public class SuperContra {
+public class SuperContra implements GamingConsole{
 	
 	public void up () {
 		System.out.println("Jump");

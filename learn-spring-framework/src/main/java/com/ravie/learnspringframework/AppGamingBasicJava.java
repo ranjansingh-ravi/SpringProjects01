@@ -2,6 +2,7 @@ package com.ravie.learnspringframework;
 
 import com.ravie.learnspringframework.game.GameRunner;
 import com.ravie.learnspringframework.game.MarioGame;
+import com.ravie.learnspringframework.game.PacMan;
 import com.ravie.learnspringframework.game.SuperContra;
 
 public class AppGamingBasicJava {
@@ -17,8 +18,13 @@ public class AppGamingBasicJava {
 	public static void main(String[] args) {
 		
 		
-		var supercontra = new SuperContra();
-		var gamerunner = new GameRunner(supercontra);
+		//var game = new SuperContra();
+		//var game = new MarioGame();
+		var game = new PacMan();  // 1. Object Creation of PacMan class
+		var gamerunner = new GameRunner(game);
+		              // 2. object creation of GameRunner class and initialization with Game object
+		              // this initialization or passing of game object to Gamerunner is known as wiring of dependencies 
+		              // game is a dependency of GameRunner
 		
 		gamerunner.run();
 		
@@ -26,4 +32,4 @@ public class AppGamingBasicJava {
 	}
 
 }
-  
+   
