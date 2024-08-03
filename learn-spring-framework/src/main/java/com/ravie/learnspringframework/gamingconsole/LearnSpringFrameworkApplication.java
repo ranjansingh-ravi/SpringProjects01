@@ -1,4 +1,4 @@
-package com.ravie.learnspringframework;
+package com.ravie.learnspringframework.gamingconsole;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

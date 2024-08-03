@@ -1,11 +1,6 @@
-package com.ravie.learnspringframework;
+package com.ravie.learnspringframework.gamingconsole;
 
-import com.ravie.learnspringframework.game.GameRunner;
-import com.ravie.learnspringframework.game.MarioGame;
-import com.ravie.learnspringframework.game.PacMan;
-import com.ravie.learnspringframework.game.SuperContra;
-
-public class App01GamingBasicJava {
+public class App01GamingBasic {
 	/*
 	 * var keyword in introduced in java 10 that allows to create local variables without explicitly 
 	 * specifying their data type. Compiler decides the datatype of the container from the value assigned.

@@ -1,4 +1,4 @@
-package com.ravie.learnspringframework;
+package com.ravie.learnspringframework.helloworldspring;
 
 import java.io.Serializable;
 

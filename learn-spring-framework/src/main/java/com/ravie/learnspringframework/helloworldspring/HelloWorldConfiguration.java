@@ -1,7 +1,8 @@
-package com.ravie.learnspringframework;
+package com.ravie.learnspringframework.helloworldspring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 //Record introduced in Java 14 and refined in Java 16 is a feature to create custom object
 // in concise way, without having to declare constructor, getter-setters, toString. JVM 
@@ -29,8 +30,14 @@ public class HelloWorldConfiguration {
 	}
 	
 	@Bean (name = "Address2")
+	@Primary
 	public Address address() {
 		return new Address("Rajarhat", "Kolkata");
+	}
+	
+	@Bean (name = "Address3")
+	public Address address3() {
+		return new Address("Sodepur", "Kolkata");
 	}
 	
 	@Bean
@@ -39,6 +46,7 @@ public class HelloWorldConfiguration {
 	}
 	
 	@Bean
+	@Primary
 	public Person person3parameters(String name, int age, Address Address2) {
 		return new Person(name, age, Address2);
 	}

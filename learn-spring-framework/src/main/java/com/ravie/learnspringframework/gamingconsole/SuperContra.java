@@ -1,4 +1,4 @@
-package com.ravie.learnspringframework.game;
+package com.ravie.learnspringframework.gamingconsole;
 
 public class SuperContra implements GamingConsole{
 	
