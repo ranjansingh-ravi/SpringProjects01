@@ -9,8 +9,8 @@ public class App03GamingSpringBean {
 	
 	public static void main(String[] args) {
 		
-		AnnotationConfigApplicationContext context = 
-				new AnnotationConfigApplicationContext(GamingConfiguration.class);
+		try(AnnotationConfigApplicationContext context = 
+				new AnnotationConfigApplicationContext(GamingConfiguration.class)) {
 		// context.getBean("game").up(); This wont work, because of the way spring works.Here we are looking for a 
 		// bean named "game". Spring is still not sure what is the type of object that will be returned with this bean name. Thus
 		// we can't call specific methods
@@ -20,6 +20,7 @@ public class App03GamingSpringBean {
 		                                           // that returns Bean (managed instance) of type GamingConsole.class which has up() method
 		//running the game
 		context.getBean(GameRunner.class).run();
+	 }
 	}
 
 }
